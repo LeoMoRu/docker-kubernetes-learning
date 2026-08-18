@@ -1,0 +1,11 @@
+# Mis primeros comandos Linux
+- 'pwd': muestra la ruta actual 
+- 'ls -la': lista archivos detallados
+- 'whoami': muestra mi usuario 
+- 'cd [CARPETA]': Entra a una carpeta especifica
+- 'clear': limpia la pantalla de la terminal 
+- 'sudo [COMANDO]': ejecuta una accion como administrador
+- 'rm [NOMBRE ARCHIVO]': elimina un archivo 
+- 'mkdir [NOMBRE CARPETA]: crea una carpeta 
+- 'touch [NOMBRE DEL ARCHIVO]: crea un archivo vacio 
+- 'cat [NOMBRE DEL ARCHIVO]: muestra el contenido de un texto
