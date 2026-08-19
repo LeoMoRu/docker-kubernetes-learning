@@ -1,0 +1,32 @@
+=== Procesos ===
+USER         PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root           1  0.0  0.0  20048 13896 ?        Ss   21:12   0:03 /usr/lib/systemd/systemd --switched-root --system --deserialize=56
+root           2  0.0  0.0      0     0 ?        S    21:12   0:00 [kthreadd]
+root           3  0.0  0.0      0     0 ?        S    21:12   0:00 [pool_workqueue_release]
+root           4  0.0  0.0      0     0 ?        I<   21:12   0:00 [kworker/R-rcu_gp]
+
+=== Puertos abiertos ===
+Netid State  Recv-Q Send-Q                      Local Address:Port Peer Address:Port
+udp   UNCONN 0      0      [fe80::7ab2:ad99:8115:6f77]%wlp3s0:546          [::]:*
+
+=== variables de entorno ===
+HOME=/home/Leo
+PROFILEHOME=
+
+=== Permisos de un archivo ===
+-rw-r--r-- 1 root root 119 Oct 12  2025 /etc/hosts
+
+=== Usuario actual y grupos ===
+uid=1000(Leo) gid=998(wheel) groups=998(wheel)
+
+=== Preguntas ===
+Que PID tiene el proceso init o system?
+el proceso init o systemd siempre tiene el PID 1 "Process ID 1", ya que es el primer proceso que arranca el sistema operativo en el espacio de usuario al iniciar el equipo.
+
+Que significa el puerto :22 si aparece? 
+este es el puerto estandar para el protocolo SSH"Secure Shell" si nos aparece abierto significa que esta listo para aceptar conexiones remotas seguras de administracion a traves de SSH.
+
+por que es importante que un contenedor no corra como root?
+es fundamental por razones de seguridad y aislamiento. si un proceso dentro de un contenedor se ejecuta con privilegios de usuario root y llegara a presentarse una vulnerabilidad o un escape del contenedor "countainer breakout", el atacante obtendria acceso de root directamente al sistema operativo de host fisico, coprometiendo toda la maquina. Correr como un usuario sin privilegios limita el radio de accion de cualquier brecha de seguridad.
+
+
