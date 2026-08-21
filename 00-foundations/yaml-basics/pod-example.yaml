@@ -9,4 +9,4 @@ spec:
   - name: web
     image: nginx:alpine
     ports:
-     - containerPort: 80
+     - containerPort80
